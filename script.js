@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hideError();
         
         try {
-            const currentWeatherUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
+            const currentWeatherUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
             const response = await fetch(currentWeatherUrl);
             
             if (!response.ok) {
@@ -79,3 +79,4 @@ document.addEventListener('DOMContentLoaded', function() {
         errorMessage.style.display = 'none';
     }
 });
+
